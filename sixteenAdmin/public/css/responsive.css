@@ -1,0 +1,344 @@
+
+/* tablette */
+@media screen and (max-width: 1024px)
+{
+    .heroA {
+        flex-direction: column;
+    }
+    .heroB {
+        flex-direction: column;
+    }
+    .heroAHalf1, .heroAHalf2, .heroBHalf {
+        width: auto;
+        margin: 10px;
+    }
+    .heroPhotoB {
+        width: 20%;
+        border-radius: 100%;
+    }
+
+}
+@media (max-width: 1024px) and (orientation: landscape){
+    .heroA {
+        flex-direction: column;
+    }
+    .heroB {
+        flex-direction: column;
+    }
+    .heroAHalf1, .heroAHalf2, .heroBHalf {
+        width: auto;
+        margin: 10px;
+    }
+    .heroPhotoB{
+        width: 15%;
+    }
+    
+}
+/* tablette */
+
+/* menu Burger */
+@media screen and (max-width: 800px){
+    /* menu burger */
+    #menuToggle
+    {
+      display: block;
+      position: relative;
+      top: 30px;
+      left: -13px;
+
+    
+      z-index: 1;
+    
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    #menuToggle a
+    {
+      text-decoration: none;
+    
+      transition: color 0.3s ease;
+    }
+
+
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+    
+      cursor: pointer;
+    
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+    
+      -webkit-touch-callout: none;
+    }
+
+    /*
+     * Just a quick hamburger
+     */
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+    
+      background: #fff;
+      border-radius: 3px;
+    
+      z-index: 1;
+    
+      transform-origin: 4px 0px;
+    
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+
+    /* 
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #B62626;
+    }
+
+    /*
+     * But let's hide the middle one.
+     */
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+     * Ohyeah and the last one should go the other direction
+     */
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+     * Make this absolute positioned
+     * at the top left of the screen
+     */
+    #menu
+    {
+        position: absolute;
+        width: 300px;
+        margin: 28px 0px 0px 13px;
+        padding: 5px 50px 5px 50px;
+        background: #2D3436;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+
+    /*
+     * And let's slide it in from the left
+     */
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+    }
+}
+/* menu Burger */
+
+/* version Mobile */
+@media (max-width: 800px) and (orientation: landscape){
+    header {
+        flex-direction: row-reverse;
+    }
+    /* classes */
+    .heroDHalf{
+        width: 28%;
+        padding: 15px;
+        margin: 10px;
+    }
+    .nav_link{
+        flex-direction: column;
+    }
+    a.logo {
+        margin-right: 15px;
+    }
+    .logo {
+        width: 200px;
+    }
+    .heroBHalf{
+        padding-right: 0px;
+    }
+    .logoFooter{
+        width: 75px;
+    }
+    /* ID */
+    #menu
+    {
+        width: 360px;
+        margin: 28px 0px 0px -31px;
+    }
+    #menuToggle{
+        left: 30px;
+    }
+    #googleMap{
+        width: 100%;
+        height: 50%;
+    }
+    .heroB {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 800px) and (orientation: portrait)
+{
+
+    header {
+        flex-direction: row-reverse;
+    }
+    p{
+        font-size: 10px;
+    }
+    button{
+        border: none;
+        color: #fff !important;
+        font-size: 10px;
+        outline: none;
+        padding: 10px 15px;
+        background: #2fb8f8;
+        text-decoration: none !important;
+        display: inline-block;
+        margin: 5px;
+        border-radius: 20px;
+    }
+    li, a {
+        text-decoration: none;
+        color: #fff;
+        list-style: none;
+        font-size: 15px;
+    }
+    
+    /* Classes */
+    .icons {
+        width: 30px;
+        margin-right: 20px;
+    }
+    .heroA {
+        flex-direction: column;
+    }
+    .heroB {
+        flex-direction: column;
+    }
+    .heroAHalf1, .heroAHalf2, .heroBHalf {
+        width: auto;
+        margin: 10px;
+    }
+    .heroBHalf{
+        padding-right: 0px;
+    }
+    .shortDescriptionArtiste {
+        min-height: 0;
+    }
+    .heroPhotoB {
+        width: 35%;
+        border-radius: 100%;
+    }
+    .heroDHalf{
+        width: 75%;
+    }
+    .nav_link{
+        flex-direction: column;
+    }
+    a.logo {
+        margin-right: 15px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .logoFooter{
+        width: 75px;
+    }
+    .heroB {
+        flex-direction: column-reverse;
+    }
+    .bannerTitre{
+        font-size: 50px;
+    }
+
+    /* ID */
+    #titreHeroA{
+        font-size: 20px;
+    }
+    #titreHeroC{
+        font-size: 35px;
+    }
+    #titreHeroB {
+        align-self: flex-start;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        font-size: 60px;
+    }
+    #menuToggle span,#menuToggle input{
+        margin-left: 40px;
+    }
+    #googleMap{
+        width: 100%;
+        height: 50%;
+    }
+    #boutonContact{
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+
+}
+/* version Mobile */
+
+
+/* version ipad */
+@media screen and (min-width: 767px){
+    
+    p {
+        font-size: 15px;
+    }
+    .heroA, .heroB{
+        flex-direction: row;
+    }
+    .heroPhotoB {
+        width: 15%;
+        border-radius: 100%;
+    }
+    .heroAHalf2{
+        width: 100%;
+    }
+    .heroDHalf {
+        width: 25%;
+    }
+}
+
+

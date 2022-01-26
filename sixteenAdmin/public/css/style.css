@@ -1,0 +1,545 @@
+@font-face {
+    font-family: 'lettersforlearner';
+    src: url('../fonts/BlankRiver.ttf');
+    src: url('../fonts/BlankRiver.ttf') format('truetype');
+}
+* {
+    font-family: 'lettersforlearner', Arial, Helvetica;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+header {
+    background-color: #2d3436;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+button {
+    border: none;
+    color: #fff !important;
+    font-size: 20px;
+    outline: none;
+    padding: 12px 20px;
+    background: #2fb8f8;
+    text-decoration: none !important;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 20px;
+}
+p {
+    font-size: 20px;
+    
+}
+footer {
+    background-color: #2d3436;
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+li, a {
+    text-decoration: none;
+    color: #fff;
+    list-style: none; 
+    font-size: 25px;
+    
+} 
+li {
+    padding: 20px;
+}
+a:hover{
+    color: #B62626;
+}
+a.logo{
+    padding: 10px;
+    margin-left: 15px;
+    width: 90px;
+}
+label {
+    font-size: 40px;
+}
+input {
+    font-size: 20px;
+    font-family: arial;
+}
+hr {
+    height: 1px;
+    padding: 0;
+    color: #000;
+    background-color: #000;
+    border: 0;
+}
+
+
+/* Classes */
+
+.heroA{
+    background-color: #B62626;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.heroB{
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+.heroC{
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap; 
+    flex-direction: row;
+    justify-content: center;
+}
+.containerB, .containerC {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 5%;
+}
+.containerC {
+    background-color: #B62626;
+    align-items: center;
+}
+.icons {
+    width: 50px;
+    margin-right: 20px;
+}
+.artistesButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.heroArtiste {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+.heroAHalf1 {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    width: 50%;
+}
+.heroAHalf2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    place-content: center;
+}
+.heroBHalf {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    width: 50%;
+    padding-right: 40px;
+}
+.heroCHalf {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    width: 34%;
+    padding: 15px;
+}
+.heroDHalf {
+    background-color: #71672C;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 25%;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-self: flex-end;
+    
+}
+.containerShopHome {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    justify-content: center;
+}
+.nomArtiste, .shortDescriptionArtiste, .nomCat {
+    padding-top: 3%;
+}
+.shortDescriptionArtiste{
+    min-height: 150px;
+}
+.nomCat {
+    text-align: center;
+    color: #000;
+}
+.heroPhotoA {
+    width: 100%;
+}
+.heroPhotoB {
+    width: 25%;
+    border-radius: 100%;
+}
+.heroPhotoC {
+    width: 100%;
+}
+.heroPhotoD {
+    width: 100%;
+}
+.heroPhotoCarousel {
+    width: 100px;
+}
+.nav_link{
+    list-style: none; 
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    padding: 10px; 
+    margin:0;
+}
+.bannerArt, .bannerGalerie, .banner, .bannerBoutique {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/IMG_2527.jpg');
+    padding: 15%;
+}
+.bannerArt {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/EE222ECC-.jpg');
+    padding: 21%;
+}
+.bannerGalerie {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/Sanstitr.png');
+    padding: 21%;
+}
+.bannerBoutique {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/Sanstitr.png');
+    padding: 21%;
+}
+.bannerTitre {
+    font-size: 65px;
+    color: #B62626;
+}
+.logo {
+    width: 300px;
+}
+.logoFooter {
+    width: 130px;
+}
+.footer {
+    padding: 20px;
+}
+.copyright {
+    padding-top: 10px;
+}
+.jay {
+    width: 70%;
+}
+.octo{
+    background-color: #fff;
+}
+.textForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.containerCarousel, .containerCarouselB {
+    text-align: -webkit-center;
+    padding: 40px 0;
+}
+.containerCarousel {
+    background-color: #B62626;
+}
+.containerCarouselB {
+    background-color: #fff;
+}
+.carouselImg {
+    margin: 0 10px;
+}
+.categorie {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 30px;
+    background-color: #71672C;
+    margin-right: 30px;
+    height: fit-content;
+}
+.catTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.shopcontainer {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    background-color: #B62626;
+}
+.grille {
+    max-width: 1300px;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
+}
+.grid-item {
+    width: 300px;
+    background: #71672C;
+}
+.liCat {
+    color: #000;
+    padding: 15px;
+    font-size: 20px;
+}
+.ulCat {
+    margin-left: 15px;
+    background-color: #FFF;
+}
+.liA{
+    color: #000;
+}
+.liCat:hover{
+    background-color: #B62626;
+    color: #fff;
+}.liA:hover{
+    color: #fff;
+}
+.containerproduits {
+    display: grid;
+    grid-template-rows: 315px 300px;
+    grid-template-columns: 275px 275px 275px;
+}
+.produit {
+    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    background-color: #71672C;
+    align-self: flex-start;
+}
+.flexShop{
+    display: flex;
+    flex-direction: column;
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+ul.pagination li {display: inline;}
+ul.pagination li a:hover {color: #fff;}
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.paginationContainer{
+    align-self: center;
+    margin-top: 10px;
+}
+.liPagination{
+    padding: 0;
+}
+.produitDetailsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #B62626;
+    padding: 27px;
+}
+.produitDetailsThumbmail{
+    width: 300px;
+    height: 300px;
+}
+.produitDetailsDescription{
+    display: flex;
+    flex-direction: column;
+}
+.produitDetailsContainer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+    width: 25%;
+}
+.hrProduitDetail{
+    margin: 10px 20px 20px 0px;
+}
+.boutonAjoutPanier{
+    width: 50%;
+    margin: 0;
+}
+.randomProduitGrid{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.box{
+    background-color: #71672C;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.thumbmailRandomProduit{
+    width: 180px;
+    height: 180px;
+}
+.caracteristiqueProduit{
+    margin-left: 90px;
+    width: 16%;
+}
+.caracteristique{
+    background-color: #71672C;
+    width: 100%;
+    margin-top: 15px;
+}
+.carac{
+    padding: 10px 0px 10px 10px;
+    border: solid;
+    border-width: 1px;
+}
+.panier{
+    background-color: #B62626;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 26px;
+}
+.panierTitle{
+    margin: 20px 0px 20px 0px;
+    font-size: 100px;
+    align-self: center;
+}
+.panierContainer{
+    background-color: #fff;
+    align-self: center;
+    width: 60%;
+}
+.panierProduit{
+    display: flex;
+    flex-direction: column;  
+}
+.thPanier{
+    font-size: 25px;
+    border-left: 1px solid #000;
+}
+.thPanier:nth-last-child(4n){
+    border-left: 0;
+}
+.tdPanier{
+    text-align: center;
+    width: 25%;
+    font-size: 25px;
+}
+.imgPanier{
+    width: 200px;
+    height: 200px;
+}
+.tablePanier{
+    border-collapse: collapse;
+}
+.tablePanier th{
+    background-color: #C4C4C4;
+    padding: 5px 0px 5px 0px;
+}
+.pay{
+    font-size: 20px;
+}
+.panierPayment{
+    display: flex;
+    flex-direction: column;
+}
+.prixTotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px 86px 10px 0px;
+}
+.moyenPay{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px 10px 5px 0px;
+}
+/* ID */
+
+#titreHeroA {
+    align-self: flex-end;
+    padding-bottom: 5%;
+    font-size: 50px;
+}
+#titreHeroB {
+    align-self: flex-start;
+    padding-bottom: 5%;
+    font-size: 60px;
+}
+#titreHeroC {
+    align-self: center;
+    padding-bottom: 5%;
+    font-size: 60px;
+}
+#logo {
+    width: 80px;
+}
+#carousel {
+    width: 75%;
+}
+#catTitle, #retourShop {
+    
+    font-size: 20px;
+    color: #000;
+    margin: 10px 10px 10px 20px;
+}
+#myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+#produithumbmail {
+    width: 100%;
+    height: 210px;
+}
+#noProduit {
+    align-self: center;
+    width: 50%;
+}
+#titreShop {
+    text-align-last: center;
+    font-size: 60px;
+    background-color: #B62626;
+    padding-top: 20px;
+}
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: -1;
+}
